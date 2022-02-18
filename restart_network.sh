@@ -1,0 +1,1 @@
+virsh net-destroy nat223 && virsh net-start nat223
