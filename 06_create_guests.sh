@@ -28,9 +28,9 @@ for (( i=0; i<4; i++ )); do
 
     sudo echo "#cloud-config
 system_info:
-default_user:
-  name: $USERNAME
-  home: /home/$USERNAME
+  default_user:
+    name: $USERNAME
+    home: /home/$USERNAME
 
 password: $PASSWORD
 chpasswd: { expire: False }
