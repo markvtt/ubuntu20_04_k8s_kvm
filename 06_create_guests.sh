@@ -45,6 +45,7 @@ ssh_authorized_keys:
 
 runcmd:
  - cd /root && git clone https://github.com/markvtt/ubuntu20_04_k8s_kvm.git
+ - cd /root/ubuntu20_04_k8s_kvm && ./09_update_rsa_keys.sh
  
 " | sudo tee /var/lib/libvirt/images/$VM_NAME/cloud-init.cfg
 
