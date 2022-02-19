@@ -1,3 +1,5 @@
+#! /bin/bash
+
 sudo mkdir -p /root/.kube 
 sudo cp /tmp/config /root/.kube
 sudo mkdir -p /home/mark/.kube 
