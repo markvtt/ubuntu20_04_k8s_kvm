@@ -2,6 +2,10 @@
 
 git clone https://github.com/markvtt/ubuntu20_04_k8s_kvm.git
 
+# make scripts executable
+git update-index --chmod=+x *.sh
+
+
 ## install desktop
 sudo apt-get install --no-install-recommends ubuntu-desktop
 sudo apt install firefox
@@ -12,3 +16,4 @@ echo "deb http://deb.anydesk.com/ all main" > /etc/apt/sources.list.d/anydesk-st
 
 apt update
 apt install anydesk
+
