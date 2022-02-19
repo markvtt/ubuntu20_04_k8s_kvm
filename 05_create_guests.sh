@@ -23,6 +23,8 @@ for (( i=0; i<4; i++ )); do
     sudo qemu-img resize \
     /var/lib/libvirt/images/$VM_NAME/root-disk.qcow2 \
     20G
+    
+    # cloud-config doco: https://cloudinit.readthedocs.io/en/latest/topics/examples.html
 
     sudo echo "#cloud-config
     system_info:
