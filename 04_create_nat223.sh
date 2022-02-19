@@ -13,11 +13,11 @@ cat <<'EOF' > nat223.xml
       <hostname>k8sworker1</hostname>
       <hostname>k8sworker1.home.lab</hostname>
     </host>
-    <host ip='192.168.223.144'>
+    <host ip='192.168.223.145'>
       <hostname>k8sworker2</hostname>
       <hostname>k8sworker2.home.lab</hostname>
     </host>
-    <host ip='192.168.223.145'>
+    <host ip='192.168.223.146'>
       <hostname>k8sworker3</hostname>
       <hostname>k8sworker3.home.lab</hostname>
     </host>
