@@ -20,3 +20,6 @@ cp ./id_rsa.pub /home/mark/.ssh
 sudo chmod 644 /home/mark/.ssh/id_rsa.pub
 
 sudo chown -R mark:mark /home/mark/.ssh
+
+sudo ls -l /root/.ssh
+sudo ls -l /home/mark/.ssh
