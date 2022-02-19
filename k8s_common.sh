@@ -1,7 +1,5 @@
 #! /bin/bash
 
-mkdir -p /tmp/k8s/configs
-
 # Variable Declaration
 
 KUBERNETES_VERSION="1.20.6-00"
