@@ -59,7 +59,7 @@ ssh_pwauth: True
     --virt-type kvm \
     --graphics none \
     --network network=nat223,model=virtio \
-    --mac=$MACADDR \
+    --mac="$MACADDR" \
     --import \
     --noautoconsole
 
