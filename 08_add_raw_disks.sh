@@ -1,4 +1,5 @@
-#! /bin/bash
+#!/bin/bash
+
 declare -a VMS=("k8smaster" "k8sworker1" "k8sworker2" "k8sworker3")
 
 for VM_NAME in "${VMS[@]}"; do

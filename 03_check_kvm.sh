@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo -e "Ensure kvm exists"
 kvm-ok
 

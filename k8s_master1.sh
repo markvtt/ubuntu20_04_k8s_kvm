@@ -1,3 +1,5 @@
+#!/bin/bash
+
 sudo kubeadm config images pull
 
 echo "Preflight Check Passed: Downloaded All Required Images"

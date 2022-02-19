@@ -1,4 +1,5 @@
-#! /bin/bash
+#!/bin/bash
+
 declare -a VMS=("k8smaster" "k8sworker1" "k8sworker2" "k8sworker3")
 declare -a MACS=("52:54:00:b0:59:5a" "52:54:00:b0:59:5b" "52:54:00:b0:59:5c" "52:54:00:b0:59:5d")
 

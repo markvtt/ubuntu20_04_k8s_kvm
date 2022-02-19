@@ -1,3 +1,5 @@
+#!/bin/bash
+
 cat <<'EOF' > nat223.xml
 <network>
   <name>nat223</name>

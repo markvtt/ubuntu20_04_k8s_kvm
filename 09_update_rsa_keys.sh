@@ -1,3 +1,4 @@
+#!/bin/bash
 
 sudo mkdir -p /root/.ssh
 sudo chmod 700 /root/.ssh

@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 sudo mkdir -p /root/.kube 
 sudo cp /tmp/config /root/.kube
