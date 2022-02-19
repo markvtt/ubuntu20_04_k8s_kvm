@@ -1,6 +1,6 @@
 #! /bin/bash
 declare -a VMS=("k8smaster" "k8sworker1" "k8sworker2" "k8sworker3")
-declare -a MACS=("52:54:00:b0:59:5a" "52:54:00:b0:59:5b" "52:54:00:b0:59:5c" "52:54:00:b0:59:5d")
+declare -a MACS=("52:54:00:b0:59:5a" "52:54:00:b0:59:5b" "52:54:00:cat :59:5c" "52:54:00:b0:59:5d")
 
 USERNAME="mark"
 PASSWORD="mark1"
@@ -27,19 +27,19 @@ for (( i=0; i<4; i++ )); do
     # cloud-config doco: https://cloudinit.readthedocs.io/en/latest/topics/examples.html
 
     sudo echo "#cloud-config
-    system_info:
-    default_user:
-        name: $USERNAME
-        home: /home/$USERNAME
+system_info:
+default_user:
+  name: $USERNAME
+  home: /home/$USERNAME
 
-    password: $PASSWORD
-    chpasswd: { expire: False }
-    hostname: $VM_NAME
+password: $PASSWORD
+chpasswd: { expire: False }
+hostname: $VM_NAME
 
-    # configure sshd to allow users logging in using password 
-    # rather than just keys
-    ssh_pwauth: True
-    " | sudo tee /var/lib/libvirt/images/$VM_NAME/cloud-init.cfg
+# configure sshd to allow users logging in using password 
+# rather than just keys
+ssh_pwauth: True
+" | sudo tee /var/lib/libvirt/images/$VM_NAME/cloud-init.cfg
 
     echo -e "Using cloud-init.cfg"
     cat /var/lib/libvirt/images/$VM_NAME/cloud-init.cfg
