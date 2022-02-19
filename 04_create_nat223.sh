@@ -5,18 +5,20 @@ cat <<'EOF' > nat223.xml
   <bridge name='virbr223' stp='on' delay='2'/>
   <dns>
     <host ip='192.168.223.143'>
+      <hostname>k8smaster</hostname>
       <hostname>k8smaster.home.lab</hostname>
-    </host>
-    <host ip='192.168.223.143'>
       <hostname>prime.home.lab</hostname>
     </host>
     <host ip='192.168.223.144'>
+      <hostname>k8sworker1</hostname>
       <hostname>k8sworker1.home.lab</hostname>
     </host>
     <host ip='192.168.223.144'>
-      <hostname>k8worker2.home.lab</hostname>
+      <hostname>k8sworker2</hostname>
+      <hostname>k8sworker2.home.lab</hostname>
     </host>
     <host ip='192.168.223.145'>
+      <hostname>k8sworker3</hostname>
       <hostname>k8sworker3.home.lab</hostname>
     </host>
   </dns>
