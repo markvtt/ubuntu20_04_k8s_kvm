@@ -5,6 +5,8 @@ git clone https://github.com/markvtt/ubuntu20_04_k8s_kvm.git
 # make scripts executable
 git update-index --chmod=+x *.sh
 
+# keys
+ssh-keygen -t rsa -b 4096 -C "mark@ubuntu.ephemeral"
 
 ## install desktop
 sudo apt-get install --no-install-recommends ubuntu-desktop
