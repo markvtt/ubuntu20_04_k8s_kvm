@@ -40,6 +40,9 @@ hostname: $VM_NAME
 # rather than just keys
 ssh_pwauth: True
 
+package_update: true
+package_upgrade: true
+
 runcmd:
  - cd /root && git clone https://github.com/markvtt/ubuntu20_04_k8s_kvm.git
  - /root/ubuntu20_04_k8s_kvm/k8s_common.sh
