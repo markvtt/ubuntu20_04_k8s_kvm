@@ -19,4 +19,4 @@ sudo chmod 600 /home/mark/.ssh/id_rsa
 cp ./id_rsa.pub /home/mark/.ssh
 sudo chmod 644 /home/mark/.ssh/id_rsa.pub
 
-sudo chown -R mark:mark /root/.ssh
+sudo chown -R mark:mark /home/mark/.ssh
