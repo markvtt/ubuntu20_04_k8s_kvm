@@ -95,13 +95,9 @@ ssh_keys:
     tust7bsBaY0AAAAObWFya0BlcGhlbWVyYWwBAgMEBQ==
     -----END OPENSSH PRIVATE KEY-----  
 
-package_update: true
-package_upgrade: true
 runcmd:
- - git clone https://github.com/markvtt/ubuntu20_04_k8s_kvm.git
- - cd ubuntu20_04_k8s_kvm
- - ./09_update_rsa_keys.sh
-
+ - cd /root && git clone https://github.com/markvtt/ubuntu20_04_k8s_kvm.git
+ 
 " | sudo tee /var/lib/libvirt/images/$VM_NAME/cloud-init.cfg
 
     echo -e "Using cloud-init.cfg"
