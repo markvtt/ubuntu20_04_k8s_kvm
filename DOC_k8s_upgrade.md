@@ -35,6 +35,7 @@ kubectl uncordon k8smaster
 
 NODE_NAME=k8sworker1
 NODE_NAME=k8sworker2
+NODE_NAME=k8sworker3
 
 apt update
 
