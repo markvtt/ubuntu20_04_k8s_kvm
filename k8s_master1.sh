@@ -1,5 +1,9 @@
 #!/bin/bash
 
+MASTER_IP="192.168.223.143"
+NODENAME=$(hostname -s)
+POD_CIDR="192.168.0.0/16"
+
 sudo kubeadm config images pull
 
 echo "Preflight Check Passed: Downloaded All Required Images"
